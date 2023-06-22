@@ -1,0 +1,123 @@
+.video {
+    margin: 0;
+   
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.body {
+    line-height: 1;
+}
+.ol, ul {
+    list-style: none;
+}
+.blockquote, q {
+    quotes: none;
+}
+.blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: hsl(0, 63%, 97%);
+    display: flex;
+    height: auto;
+    background-image: url("https://wallpapercrafter.com/desktop/87884-honda-bikes-hd-behance.jpg");
+     color: #fff7f7;
+    
+}
+
+.wrapper {
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+
+.products-container {
+    margin-top: 40px;
+}
+
+    .products-container header {
+        margin-bottom: 20px;
+    }
+
+    .products-container h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ff0000;
+        text-align: center;
+    }
+
+/**
+    PRODUCT INFO STYLES
+ */
+.product-info {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.product-info li {
+    margin: 10px 0;
+}
+
+    .product-info span {
+        font-weight: bold;
+    }
+
+    /*** ESTILOS BOTÓN SLIDE TOP ***/
+.ov-btn-slide-top {
+  background: #f00808; /* color de fondo */
+  color: #ffffff; /* color de fuente */
+  border: 3px solid #f00808; /* tamaño y color de borde */
+  padding: 16px 25px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-top:hover {
+  color: #fff; /* color de fuente hover */
+}
+.ov-btn-slide-top::after {
+  content: "";
+  background: #c4110bee; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  
+}
+.ov-btn-slide-top:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+  .col {
+    width: 6.25%; /* 60 / 960 = 0.0625 */
+  }
+  
